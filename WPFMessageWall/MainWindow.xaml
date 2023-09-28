@@ -4,9 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFMessageWall"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" FontSize="32"
+        Title="Message Wall by Mohammad Jabir" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="0" Margin="0 20 0 10">
+            <TextBlock Margin="0 0 5 0">Message:</TextBlock>
+            <TextBox x:Name="messageText" MinWidth="200" MaxWidth="300" TextWrapping="Wrap"/>
+        </StackPanel>
+        
+        <Button x:Name="addMessage" Grid.Row="1" Grid.Column="1" Padding="0 5" Click="addMessage_Click">Add Message</Button>
+
+        <ListBox x:Name="messageList" Grid.Row="2" Grid.Column="1" Margin="0 20 0 0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>

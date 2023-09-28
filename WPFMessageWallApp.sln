@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFMessageWall", "WPFMessageWall\WPFMessageWall.csproj", "{6CF0C2A5-DD09-4F8C-A5AB-2B5E5798C5D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFFrameworkDemoUI", "WPFFrameworkDemoUI\WPFFrameworkDemoUI.csproj", "{FE3F0580-E8F2-4E47-A546-BDD36CA02FD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6CF0C2A5-DD09-4F8C-A5AB-2B5E5798C5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CF0C2A5-DD09-4F8C-A5AB-2B5E5798C5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CF0C2A5-DD09-4F8C-A5AB-2B5E5798C5D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE3F0580-E8F2-4E47-A546-BDD36CA02FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE3F0580-E8F2-4E47-A546-BDD36CA02FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE3F0580-E8F2-4E47-A546-BDD36CA02FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE3F0580-E8F2-4E47-A546-BDD36CA02FD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
